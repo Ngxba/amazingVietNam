@@ -460,7 +460,7 @@ const Places = ({
                           data-aos-duration="2000"
                         >
                           <Image
-                            src={require("../assets/images/oldquater.jpg")}
+                            src={require("../assets/images/hoguom.jpg")}
                             alt="Features split 01"
                             width={528}
                             height={396}
@@ -528,7 +528,7 @@ const Places = ({
                           data-aos-duration="2000"
                         >
                           <Image
-                            src={require("../assets/images/hoguom.jpg")}
+                            src={require("../assets/images/oldquater.jpg")}
                             alt="Features split 02"
                             width={528}
                             height={396}

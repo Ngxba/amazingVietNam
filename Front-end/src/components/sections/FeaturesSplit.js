@@ -101,7 +101,6 @@ const FeaturesSplit = ({
     try {
       const res = await getDestination();
       setDestinationData(res);
-      console.log(res)
     } catch (err) {
       console.log("get DATA FALSE");
     }
@@ -232,6 +231,7 @@ const FeaturesSplit = ({
 
   const [updateDestinationID, setUpdateDestinationID] = useState("");
   const updateDestinationData = (region, city, description, id) => {
+    console.log(region, city, description, id)
     setCity(city);
     setRegion(region);
     setDescription(description);
@@ -583,7 +583,8 @@ const FeaturesSplit = ({
                                   updateDestinationData(
                                     data.region,
                                     data.city,
-                                    data.description
+                                    data.description,
+                                    data._id
                                   );
                                 }}
                               >
@@ -619,7 +620,7 @@ const FeaturesSplit = ({
                         data-aos-duration="2000"
                       >
                         <Image
-                          src={require("./../../assets/images/danang.jpg")}
+                          src={require("./../../assets/images/bacninh.jpg")}
                           alt="Features split 02"
                           width={528}
                           height={396}
@@ -699,7 +700,7 @@ const FeaturesSplit = ({
                         data-aos-duration="2000"
                       >
                         <Image
-                          src={require("./../../assets/images/hanoi.jpg")}
+                          src={require("./../../assets/images/danang.jpg")}
                           alt="Features split 01"
                           width={528}
                           height={396}
@@ -736,7 +737,8 @@ const FeaturesSplit = ({
                                   updateDestinationData(
                                     data.region,
                                     data.city,
-                                    data.description
+                                    data.description,
+                                    data._id
                                   );
                                 }}
                               >
@@ -772,7 +774,7 @@ const FeaturesSplit = ({
                         data-aos-duration="2000"
                       >
                         <Image
-                          src={require("./../../assets/images/danang.jpg")}
+                          src={require("./../../assets/images/hoian.jpg")}
                           alt="Features split 02"
                           width={528}
                           height={396}
@@ -852,7 +854,7 @@ const FeaturesSplit = ({
                         data-aos-duration="2000"
                       >
                         <Image
-                          src={require("./../../assets/images/hanoi.jpg")}
+                          src={require("./../../assets/images/condao.jpg")}
                           alt="Features split 01"
                           width={528}
                           height={396}
@@ -889,7 +891,8 @@ const FeaturesSplit = ({
                                   updateDestinationData(
                                     data.region,
                                     data.city,
-                                    data.description
+                                    data.description,
+                                    data._id
                                   );
                                 }}
                               >
@@ -925,7 +928,7 @@ const FeaturesSplit = ({
                         data-aos-duration="2000"
                       >
                         <Image
-                          src={require("./../../assets/images/danang.jpg")}
+                          src={require("./../../assets/images/hochiminh.jpg")}
                           alt="Features split 02"
                           width={528}
                           height={396}

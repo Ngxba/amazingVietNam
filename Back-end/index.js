@@ -69,6 +69,7 @@ app.post("/api/destination/delete", async (req, res) => {
 
 app.post("/api/destination/update", async (req, res) => {
   const { region, city, description, id } = req.body;
+  console.log(region, city, description, id);
   try {
     await destinationService.updateDestination(region, city, description,id);
     res.json({
